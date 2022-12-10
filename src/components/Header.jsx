@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import Image from 'next/image';
 import Menu from '@components/Menu';
 import MyOrder from '@containers/MyOrder';
 import menu from '@icons/icon_menu.svg';
@@ -18,9 +19,9 @@ const Header = () => {
 
 	return (
 		<nav className={styles.Nav}>
-			<img src={menu} alt="menu" className={styles.menu} />
+			<Image src={menu} alt="menu" className={styles.menu} />
 			<div className={styles["navbar-left"]}>
-				<img src={logo} alt="logo" className={styles["nav-logo"]} />
+				<Image src={logo} alt="logo" className={styles["nav-logo"]} />
 				<ul>
 					<li>
 						<a href="/">All</a>
@@ -51,7 +52,7 @@ const Header = () => {
 						className={styles["navbar-shopping-cart"]}
 						onClick={() => setToggleOrders(!toggleOrders)}
 					>
-						<img className={`styles['more-clickable-area'], styles.pointer`} src={shoppingCart} alt="shopping cart" />
+						<Image className={`styles['more-clickable-area'], styles.pointer`} src={shoppingCart} alt="shopping cart" />
 						{state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
 					</li>
 				</ul>
