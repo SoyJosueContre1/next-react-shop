@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import logo from '@logos/logo_yard_sale.svg'
 import styles from '@styles/Login.module.scss';
 
@@ -30,7 +31,7 @@ const Login = () => {
 						className={`styles["primary-button"], styles["login-button"]`}>
 						Log in
 					</button>
-					<a href="/">Forgot my password</a>
+					<Link href="/password-recovery">Forgot my password</Link>
 				</form>
 				<button
 					className={`styles["secondary-button"], styles["signup-button"]`}>
