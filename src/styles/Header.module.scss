@@ -28,6 +28,10 @@
 .navbar-left ul {
 	margin-left: 12px;
 }
+
+.navbar-right li:first-of-type {
+	margin-right: 1em;
+}
 .navbar-left ul li a,
 .navbar-right ul li a {
 	text-decoration: none;
@@ -66,6 +70,7 @@
 @media (max-width: 640px) {
 	.menu {
 		display: block;
+		margin-top: 17.5px;
 	}
 	.navbar-left ul {
 		display: none;
