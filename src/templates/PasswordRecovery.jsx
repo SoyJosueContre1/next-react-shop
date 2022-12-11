@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '@logos/logo_yard_sale.svg'
+import logo from '@logos/logo_yard_sale.svg';
 import styles from '@styles/PasswordRecovery.module.scss';
 
 const PasswordRecovery = () => {
@@ -18,6 +18,6 @@ const PasswordRecovery = () => {
 			</div>
 		</div>
 	);
-}
+};
 
 export default PasswordRecovery;

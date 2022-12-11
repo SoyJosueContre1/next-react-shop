@@ -14,6 +14,6 @@ const Order = () => {
 			<Image src={flechita} alt="arrow" />
 		</div>
 	);
-}
+};
 
 export default Order;

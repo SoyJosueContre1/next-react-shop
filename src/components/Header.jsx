@@ -16,7 +16,7 @@ const Header = () => {
 
 	const handleToggle = () => {
 		setToggle(!toggle);
-	}
+	};
 
 	return (
 		<nav className={styles.Nav}>
@@ -51,10 +51,7 @@ const Header = () => {
 					<li className={`styles['more-clickable-area'], styles['navbar-email'], styles.pointer`} onClick={() => handleToggle()}>
 						platzi@example.com
 					</li>
-					<li
-						className={styles["navbar-shopping-cart"]}
-						onClick={() => setToggleOrders(!toggleOrders)}
-					>
+					<li className={styles["navbar-shopping-cart"]} onClick={() => setToggleOrders(!toggleOrders)}>
 						<Image className={`styles['more-clickable-area'], styles.pointer`} src={shoppingCart} alt="shopping cart" />
 						{state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
 					</li>
@@ -64,6 +61,6 @@ const Header = () => {
 			{toggleOrders && <MyOrder />}
 		</nav>
 	);
-}
+};
 
 export default Header;

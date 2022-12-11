@@ -16,5 +16,9 @@ module.exports = {
     rules: {
         'semi': ['error', 'always'],
         'prettier/prettier': 0,
+        'jsx-a11y/no-noninteractive-element-interactions': 0,
+        'jsx-a11y/click-events-have-key-events': 0,
+        'jsx-a11y/label-has-associated-control': 0,
+        'react/no-unescaped-entities': 0,
     }
 }
