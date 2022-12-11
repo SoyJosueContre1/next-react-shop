@@ -7,7 +7,9 @@ const useGetProducts = (API) => {
 	useEffect(() => {
     	(async () => {
 				const response = await axios(API);	  
-				setProducts(response.data);
+				setProducts(response.data.filter((item) => {
+					return item.id < 200;
+				}));
 			})();
 		}, []);
 
